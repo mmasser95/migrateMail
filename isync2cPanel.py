@@ -12,7 +12,7 @@ def parseIn(f):
 
 
 def createConf(ln, q):
-    stdout.write("\n".join([f'{l[4]};{l[5]};{q}' for l in ln]))
+    stdout.write("Email,Password,Quota\n"+"\n".join([f'{l[4]},{l[5]},{q}' for l in ln]+"\n"))
 
 
 if __name__ == "__main__":
